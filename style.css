@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    gap: 1rem;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.container:nth-child(even){
+    flex-direction:row-reverse ;
+}
+@media only screen and (max-width:545px){
+    .container{
+          flex-direction: column;
+    }
+    .container:nth-child(even){
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+}
+.container p::first-letter{
+        font-size: 2rem;
+        color: brown;
+}
+ 
